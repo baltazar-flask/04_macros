@@ -1,0 +1,8 @@
+<!-- CONTROL STRUCTURES - IMPORT, MACROS -->
+
+{% import 'macros.html' as makroi %}
+
+<ul>
+  {% for comment in comments %} {{ makroi.render_comment(comment) }} {% endfor
+  %}
+</ul>

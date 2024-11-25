@@ -1,0 +1,5 @@
+<!--tekst: Tekst koji će se prikazati na gumbu-->
+<!--klasa: CSS klasa koja će stilizirati dugme (podrazumijevana vrijednost je "btn-primary")-->
+{% macro dugme(tekst, klasa="btn-primary") %}
+<button class="btn {{ klasa }}">{{ tekst }}</button>
+{% endmacro %}

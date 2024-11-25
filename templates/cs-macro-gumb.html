@@ -1,0 +1,22 @@
+{% import "macros-gumb.html" as makroi %}
+
+<!DOCTYPE html>
+<html lang="hr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Flask Makroi Primjer</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Flask Makroi</h1>
+      <!--{{ makroi.dugme("Klikni me") }} kreira dugme sa tekstom "Klikni me" i podrazumijevanom klasom btn-primary-->
+      {{ makroi.dugme("Klikni me") }}
+      <!--{{ makroi.dugme("Drugo Dugme", "btn-danger") }} kreira dugme sa tekstom "Drugo Dugme" i koristi klasu btn-danger za stilizaciju dugmeta-->
+      {{ makroi.dugme("Drugo Dugme", "btn-danger") }}
+    </div>
+  </body>
+</html>
